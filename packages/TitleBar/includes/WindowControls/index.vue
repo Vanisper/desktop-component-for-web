@@ -27,9 +27,9 @@ defineProps<{
     OnTopWindow: Function,
     isMaximised: Boolean,
     isMinimised: Boolean,
-    WindowMinimise: Function,
-    WindowClose: Function,
-    WindowMaximise: Function,
+    WindowMinimise: (payload: MouseEvent) => void,
+    WindowClose: (payload: MouseEvent) => void,
+    WindowMaximise: (payload: MouseEvent) => void,
 }>()
 </script>
   

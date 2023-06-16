@@ -6,18 +6,10 @@
 <script setup lang="ts" >
 import { ref, watch } from 'vue';
 
-const props = defineProps({
-    isOntoped: {
-        type: Boolean,
-        default: false
-    },
-    OnTopWindow: {
-        type: Function,
-        default: () => {
-
-        }
-    }
-})
+const props = defineProps<{
+    isOntoped: Boolean,
+    OnTopWindow: Function
+}>()
 const isOntoped = ref(props.isOntoped)
 watch(() => props.isOntoped, (value) => isOntoped.value = value)
 

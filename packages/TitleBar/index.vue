@@ -25,12 +25,12 @@ import WindowControls from "./includes/WindowControls/index.vue";
 defineProps<{
     isOntoped: Boolean,
     OnTopWindow: Function,
-    dblclick: MouseEvent,
+    dblclick: (payload: MouseEvent) => void,
     isMaximised: Boolean,
     isMinimised: Boolean,
-    WindowMinimise: Function,
-    WindowClose: Function,
-    WindowMaximise: Function,
+    WindowMinimise: (payload: MouseEvent) => void,
+    WindowClose: (payload: MouseEvent) => void,
+    WindowMaximise: (payload: MouseEvent) => void,
 }>()
 
 </script>
