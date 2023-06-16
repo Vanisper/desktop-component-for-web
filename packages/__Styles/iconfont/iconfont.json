@@ -1,0 +1,51 @@
+{
+  "id": "3860786",
+  "name": "微记_DeskTop",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "33809783",
+      "name": "置顶_双层",
+      "font_class": "zhiding_shuangceng",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "680377",
+      "name": "最小化",
+      "font_class": "zuixiaohua",
+      "unicode": "e6e8",
+      "unicode_decimal": 59112
+    },
+    {
+      "icon_id": "20226341",
+      "name": "收起",
+      "font_class": "shouqi",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "20226416",
+      "name": "关闭",
+      "font_class": "guanbi",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "20226431",
+      "name": "全屏",
+      "font_class": "quanping",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "20226463",
+      "name": "置顶",
+      "font_class": "zhiding",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    }
+  ]
+}
