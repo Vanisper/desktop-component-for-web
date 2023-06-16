@@ -15,6 +15,7 @@
   </windows-title-bar>
   <div class="main" v-contextmenu="menus">
     <h3>可以右击此区域</h3>
+    <h4>（移动端长按触发）</h4>
   </div>
 </template>
 
