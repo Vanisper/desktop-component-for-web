@@ -60,17 +60,17 @@ jobs:
       - name: Restore cache
         uses: actions/cache@v3
         with:
-          path: dist-example
-          key: ${{ runner.os }}-vite-build-${{ hashFiles('dist-example') }}
+          path: dist
+          key: ${{ runner.os }}-vite-build-${{ hashFiles('dist') }}
           restore-keys: ${{ runner.os }}-vite-build-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }} --no-frozen-lockfile
       - name: Static HTML export with Vite
-        run: ${{ steps.detect-package-manager.outputs.manager }} run build:example
+        run: ${{ steps.detect-package-manager.outputs.manager }} run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: ./dist-example
+          path: ./dist
 
   # Deployment job
   deploy:
