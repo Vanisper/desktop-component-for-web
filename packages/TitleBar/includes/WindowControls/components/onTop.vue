@@ -56,6 +56,7 @@ span {
     //color: @sticky-color;
     color: v-bind("style.stickyColor");
     width: 43px;
+    height: unset;
 
     &::before {
         transition: transform 300ms;

@@ -8,3 +8,14 @@
   width: 100vw;
   overflow: hidden;
 }
+
+
+.dark .main {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.dark header {
+  background-color: #272727 !important;
+  --text-primary: #fff
+}

@@ -10,7 +10,7 @@
       <!-- 中间插槽 -->
     </template>
     <template #extend-right>
-      <span style="line-height: 32px;">右侧插槽</span>
+      <toggle-theme style="height: 100%;width: 32px;padding: 6px;"></toggle-theme>
     </template>
   </windows-title-bar>
   <div class="main" v-contextmenu="menus">
@@ -22,6 +22,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import WindowsTitleBar from "../packages/TitleBar/index.vue";
+import ToggleTheme from './components/Button/ToggleTheme.vue';
 import { IClickMenuItem } from "web-contextmenu/type/ContextMenuType";
 
 const dblclick = () => {
